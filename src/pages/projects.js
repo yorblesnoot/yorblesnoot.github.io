@@ -15,7 +15,7 @@ function Project({title, imageurl, blurb})
 {
     return(
         <div className='projectdisplay'>
-            <img src={imageurl} width={300} height={300}/>
+            <img src={imageurl} alt='project' width={300} height={300}/>
             <div className='projectwords'>
                 <h1>{title}</h1>
                 {blurb}
