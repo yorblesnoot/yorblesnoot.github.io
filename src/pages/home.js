@@ -17,8 +17,6 @@ function HomePage()
               <div style={{fontSize:'.7em'}}>But seriously, if you have employment opportunities please reach out!</div>
             </div>
         </div>
-
-
       </div>
     )
   }
