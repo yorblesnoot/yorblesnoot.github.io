@@ -1,6 +1,6 @@
 import './page.css';
 
-function ContactPage()
+export default function ContactPage()
 {
   return(
     <div  className='frame'>
@@ -9,4 +9,3 @@ function ContactPage()
     </div>
   )
 }
-export default ContactPage
