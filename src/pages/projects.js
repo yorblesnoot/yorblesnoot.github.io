@@ -9,10 +9,10 @@ function ProjectsPage()
 {
   return(
     <div  className='frame'>
-        <Project title='Prototype Tree Generator' imageurl={tree} 
-        blurb="What started as a potential level idea for Tiny Robot Tactics became a week-long quest to create the perfect procedural tree generator, built based on an research paper I found online. Uses Djikstra's algorithm and guiding vectors to create natural-looking branch patterns. It ultimately didn't seem conducive to compelling gameplay, so it's currently sitting in disuse. It did, however, produce some visually interesting specimens."/>
         <Project title='Tiny Robot Tactics' imageurl={robot} 
         blurb="A micro-CRPG I am currently working on in Unity. It emulates the combat feel of Baldur's Gate 3 while extrapolating that gameplay into the third dimension and replacing all the characters with little robots. Makes extensive use of procedural animation to bring modular characters to life."/>
+        <Project title='Prototype Tree Generator' imageurl={tree} 
+        blurb="What started as a potential level idea for Tiny Robot Tactics became a week-long quest to create the perfect procedural tree generator, built based on a research paper I found online. Uses Djikstra's algorithm and guiding vectors to create natural-looking branch patterns. It ultimately didn't seem conducive to compelling gameplay, so it's currently sitting in disuse. It did, however, produce some visually interesting specimens."/>
         <Project title="Don, Lanternflies, N'at" imageurl={lantern} link="https://globalgamejam.org/games/2024/don-lanternflies-nat-8"
         blurb="For the 2024 Global Game Jam, I joined an already-established team with a clear vision. Deviating from my typical coding focus, I modeled and rigged a spotted lanternfly for the team in 24 hours. Then, I helped the team debug their Unity code and complete their game. Download the finished product "/>
         <Project title='Slime Alchemist' imageurl={slime} link="https://store.steampowered.com/app/2567800/Slime_Alchemist/" 
