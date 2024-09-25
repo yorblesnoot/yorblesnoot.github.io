@@ -24,7 +24,7 @@ function App() {
   return (
     <>
       <div className='navbar'>
-        <h1 className='navname'>ED KORB</h1><div></div><div></div><div></div><div></div><div></div>
+        <h1 className='navname'>ED KORB</h1><div/><div/><div/><div/><div/>
       {pages}
       </div>
       {currentPage}
@@ -37,7 +37,7 @@ function NavigationButton({text, link, change, highlight}){
   let underline = '';
   if(highlight === true)
   {
-    wordColor = 'white';
+    //wordColor = 'white';
     underline = '5px solid white';
   }
   return(
