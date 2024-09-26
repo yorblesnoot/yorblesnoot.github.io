@@ -9,6 +9,8 @@
   position: -webkit-sticky;
   position: sticky;
   top: 0;
+  box-shadow: 1px 1px 3px 1px rgb(156, 156, 156);
+  z-index: 1;
 }
 .navname{
   -webkit-user-select: none; /* Safari */        

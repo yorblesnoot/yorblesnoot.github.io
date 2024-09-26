@@ -9,11 +9,8 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding-left: 16px;
-    padding-right: 16px;
-    margin-bottom: 16px;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 40%;
+    margin-right: 40%;
 }
 
 .innerblock{
@@ -26,13 +23,13 @@
 }
 
 .big-word{
-    font-size: x-large;
+    font-size: xx-large;
     display: inline-block;
     color: aquamarine;
     font-weight: bolder;
 }
 .med-word{
-    font-size: larger;
+    font-size: x-large;
     display: inline-block;
     font-weight: bold;
     text-align: center;
@@ -43,37 +40,74 @@
     margin-right: 20%;
 }
 
+.projectholder{
+    display: flex;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    
+}
+.projectcolumn{
+    width: 50%;
+    margin: 1%;
+}
+
 .projectdisplay{
     display: flex;
     flex-direction: row;
-    background-color: darkgray;
+    background-color: transparent;
     width: 100%;
-    height: 30%;
-    margin: 10px;
-    padding: 10px;
-    box-shadow: 3px 3px 4px black;
-    border-radius: 5px;
+    height: 400px;
+    margin: 3%;
+    perspective: 1000px;
 }
 
-.projectwords{
-    margin: 1%;
-    width:100%;
-    padding: 1%;
-    box-shadow: 0px 0px 4px -.01px black inset;
-    border-radius: 5px;
+.flip-display{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    box-shadow: 2px 2px 3px black;
 }
+.projectdisplay:hover .flip-display {
+    transform: rotateY(180deg);
+}
+
+.flip-front, .flip-back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+}
+
+.flip-front {
+    background-color: #bbb;
+    color: black;
+}
+
+.flip-back{
+    background-color: dodgerblue;
+    color: white;
+    transform: rotateY(180deg);
+    width:100%;
+}
+.back-text{
+    margin: 5%;
+}
+
 
 .projectimage{
-    margin: 1%;
-    border-radius: 5px;
-    height: 30%;
-    width: 30%;
+    margin: 0%;
 }
 
 img {
-    max-width: 100%;
-    height: auto;
-    width: auto\9; /* ie8 */
+    height: 100%;
+    width: 100%; /* ie8 */
+    object-fit: cover;
 }
+
 
 
